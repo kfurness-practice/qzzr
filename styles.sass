@@ -1,3 +1,56 @@
+$modal-background: #eeeff8
+$white: white
+$margin-rt: 2vw
+$margin-lt: 2vw
+$arial: Helvetica, sans-serif
+$modal-name-size: 20px
+
+
+body
+  font-family: $arial
+
+.padding-gutter
+  padding: 0 10px
+
+
+//  put max width in media-query
 .modal
+  background-color: $modal-background
   display: flex
-  justify-content: center
+  justify-content: space-around
+  max-width: 60vw
+  max-width: 700px
+  margin: 0 auto
+  padding: 3vw
+
+.modal-profPic
+  margin-right: $margin-rt
+  img
+    border-radius: 50%
+    height: auto
+    width: 100%
+    max-width: 150px
+    min-width: 75px
+
+.modal-post-heading
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  time
+    margin: 13.4px 0
+
+.modal-post-user
+  font-size: $modal-name-size
+
+.modal-content
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  background-color: $white
+  margin-left: $margin-lt
+
+.modal-article
+  img
+    height: auto
+    width: 100%
+    max-width: 600px
