@@ -4,13 +4,13 @@ body {
 hr {
   border-top: 1px solid #eeeff8; }
 
-.padding-gutter {
+.padding-gutter, .modal-post, .modal-link h1, .modal-link h2 {
   padding: 0 18px; }
 
-.small-top-margin {
+.small-top-margin, .modal-post p {
   margin-top: 5px; }
 
-.large-top-margin {
+.large-top-margin, .modal-post-heading {
   margin-top: 15px; }
 
 .modal {
@@ -26,6 +26,9 @@ hr {
   margin-right: 10px; }
 
 .modal-profPic-img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
   border-radius: 50%;
   height: auto;
   width: 100%;
@@ -37,49 +40,46 @@ hr {
   flex-direction: column;
   background-color: white;
   margin-left: 10px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
   border-radius: 2px; }
+
+.modal-post p {
+  font-size: 20px; }
 
 .modal-post-heading {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 20px; }
-
-.modal-post-user {
-  font-size: 20px; }
-
-.modal-post-user-span {
-  color: #47c498;
-  font-weight: normal; }
-
-.modal-post-time {
-  margin: 13.4px 0;
-  color: #c3cfe1; }
-
-.modal-post-summary {
-  font-size: 20px; }
+  .modal-post-heading h1 {
+    font-size: 20px; }
+  .modal-post-heading span {
+    color: #47c498;
+    font-weight: normal; }
+  .modal-post-heading time {
+    margin: 13.4px 0;
+    color: #c3cfe1; }
 
 .modal-link {
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
-
-.modal-link-title {
-  margin-top: 12px;
-  font-weight: lighter;
-  color: lightslategray; }
-
-.modal-link-author {
-  color: #c3cfe1;
-  font-weight: lighter;
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 22px; }
-
-.modal-link-img {
-  height: auto;
-  width: 100%;
-  max-width: 600px; }
+  .modal-link h1 {
+    margin-top: 12px;
+    font-weight: lighter;
+    color: lightslategray; }
+  .modal-link h2 {
+    color: #c3cfe1;
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 22px; }
+  .modal-link img {
+    height: auto;
+    width: 100%;
+    max-width: 600px; }
 
 .aside {
   text-align: center;
@@ -107,4 +107,4 @@ hr {
 .hover-div:active {
   color: #47c498; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles_revisited.css.map */

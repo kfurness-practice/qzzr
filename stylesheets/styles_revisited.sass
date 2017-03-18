@@ -24,7 +24,7 @@ body
 hr
   border-top: 1px solid $background-gray
 
-//  Helper styles
+//  Helper styles for @extends
 .padding-gutter
   padding: 0 18px
 
@@ -49,7 +49,7 @@ hr
   margin-right: $margin-rt
 
 .modal-profPic-img
-  border-radius: 50%
+  +border-radius(50%)
   height: auto
   width: 100%
   max-width: 150px
@@ -60,49 +60,49 @@ hr
   flex-direction: column
   background-color: $white
   margin-left: $margin-lt
-  border-radius: 2px
+  +border-radius(2px)
+
+.modal-post
+  @extend .padding-gutter
+  p
+    @extend .small-top-margin
+    font-size: $modal-name-size
 
 .modal-post-heading
+  @extend .large-top-margin
   display: flex
   flex-direction: row
   justify-content: space-between
   font-size: $modal-name-size
-
-.modal-post-user
-  font-size: $modal-name-size
-
-.modal-post-user-span
-  color: $mint
-  font-weight: normal
-
-.modal-post-time
-  margin: 13.4px 0
-  color: $light-text-gray
-
-.modal-post-summary
-  font-size: $modal-name-size
+  h1
+    font-size: $modal-name-size
+  span
+    color: $mint
+    font-weight: normal
+  time
+    margin: 13.4px 0
+    color: $light-text-gray
 
 .modal-link
   display: flex
   flex-direction: column
   justify-content: flex-end
-
-.modal-link-title
-  margin-top: 12px
-  font-weight: lighter
-  color: $article-title-gray
-
-.modal-link-author
-  color: $light-text-gray
-  font-weight: lighter
-  font-size: $modal-name-size
-  margin-top: 0
-  margin-bottom: 22px
-
-.modal-link-img
-  height: auto
-  width: 100%
-  max-width: 600px
+  h1
+    @extend .padding-gutter
+    margin-top: 12px
+    font-weight: lighter
+    color: $article-title-gray
+  h2
+    @extend .padding-gutter
+    color: $light-text-gray
+    font-weight: lighter
+    font-size: $modal-name-size
+    margin-top: 0
+    margin-bottom: 22px
+  img
+    height: auto
+    width: 100%
+    max-width: 600px
 
 .aside
   text-align: center
