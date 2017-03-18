@@ -47,11 +47,11 @@ hr {
   background-color: white;
   margin-left: 10px; }
 
-.modal-article {
+.modal-link {
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
-  .modal-article img {
+  .modal-link img {
     height: auto;
     width: 100%;
     max-width: 600px; }
