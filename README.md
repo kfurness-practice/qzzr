@@ -7,6 +7,6 @@ I decided to see how I felt about using nested elements and get rid of all my cl
 
 Ultimately, I think heavily using classes to style is a smart way to go about styling. This can be further accompanied by using extend/inheritance Sass features. Feel free to see how I styled in both ways. The main index.html is linked to styles.sass. This is the one that is class heavy. Pikachu.html is the one that relies on nesting but uses extend/inheritance.
 
-index.html ---> styles.sass --> class heavy
+index.html ---> styles.sass ---> class heavy
 
 pikachu.index.html ---> styles_revisited.css ---> nesting & extend/inheritance
